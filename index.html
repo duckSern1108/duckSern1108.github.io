@@ -435,12 +435,12 @@ var ParticlePool = (function() {
   })();
 
  
-
+var j = 0
   // render that thing!
 
   function render() {
 
-    // next animation frame
+    // next animation frame    
 
     requestAnimationFrame(render);
 
@@ -465,14 +465,17 @@ var ParticlePool = (function() {
     // create new particles
 
     var amount = particleRate * deltaTime;
-
+    j++
     for (var i = 0; i < amount; i++) {
 
       var pos = pointOnHeart(Math.PI - 2 * Math.PI * Math.random());
 
       var dir = pos.clone().length(settings.particles.velocity);
-
-      particles.add(canvas.width / 2 + pos.x, canvas.height / 2 - pos.y, dir.x, -dir.y);
+		var rate = 1
+        if (j % 2 === 0) {
+          rate = -1
+        }
+      particles.add(canvas.width / 2 + pos.x, canvas.height / 2 - pos.y, dir.x * rate, -dir.y * rate);
 
     }
 
