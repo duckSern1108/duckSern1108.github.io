@@ -9,7 +9,7 @@ body, html {
 }
 
 .cracker {
-  width: calc(400px);
+  width: calc(350px);
   height: calc(11.4 * 6.25px);
   margin: calc(11.4 * 6.25px) auto 0;
   position: relative;
