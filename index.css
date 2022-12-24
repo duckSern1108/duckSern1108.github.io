@@ -14,7 +14,7 @@ body, html {
   cursor: pointer;
 }
 
-/* .cracker:hover .cracker-left {
+.cracker:hover .cracker-left {
   left: calc(-13 * 7.5px);
   top: calc(13 * 3.125px);
   transform: rotate(-15deg);
@@ -23,7 +23,7 @@ body, html {
   right: calc(-13 * 7.5px);
   top: calc(13 * 3.125px);
   transform: rotate(15deg);
-} */
+}
 
 .cracker-left-tap {  
   left: calc(-13 * 7.5px) !important;
