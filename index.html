@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Merry XMas</title>
   <link rel="stylesheet" href="index.css">
-
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
 </head>
 <body> 
   <div class="sky">
   </div>  
   <p style="text-align: center; font-size: large;">    
-    Di chuột vào từng viên kẹo để mở 
+    Chạm vào từng viên kẹo để mở 
   </p>
   <div class='cracker' id='cracker'>
     <div class='cracker-message'>
@@ -54,7 +55,7 @@
     </div>
   </div>
 
-  <div class='cracker' id='cracker'>
+  <div class='cracker' id='cracker1'>
     <div class='cracker-message'>
       <div class='cracker-message__inner'>
         Không biết 8h tối mai
@@ -94,7 +95,7 @@
     </div>
   </div>  
 
-  <div class='cracker' id='cracker'>
+  <div class='cracker' id='cracker2'>
     <div class='cracker-message'>
       <div class='cracker-message__inner'>
         H có ở phòng ko để S qua tặng quà nhỉ?        
@@ -232,5 +233,29 @@ window.addEventListener('resize', onResize, false);
 masthead.appendChild(canvas);
 })();
 </script>
+<script>
+  $(function(){    
+    $( "div#cracker" ).bind( "tap", tapHandler );
+   
+    function tapHandler( event ){      
+      $( "div#cracker" ).children("div.cracker-left").toggleClass("cracker-left-tap")
+      $( "div#cracker" ).children("div.cracker-right").toggleClass("cracker-right-tap")
+    }
+
+    $( "div#cracker1" ).bind( "tap", tapHandler1 );
+   
+    function tapHandler1( event ){      
+      $( "div#cracker1" ).children("div.cracker-left").toggleClass("cracker-left-tap")
+      $( "div#cracker1" ).children("div.cracker-right").toggleClass("cracker-right-tap")
+    }
+
+    $( "div#cracker2" ).bind( "tap", tapHandler2 );
+   
+    function tapHandler2( event ){      
+      $( "div#cracker2" ).children("div.cracker-left").toggleClass("cracker-left-tap")
+      $( "div#cracker2" ).children("div.cracker-right").toggleClass("cracker-right-tap")
+    }
+  });
+  </script>
 </body>
 </html>
