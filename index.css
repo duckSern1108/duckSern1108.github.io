@@ -1,0 +1,306 @@
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+body, html {
+  font-family: 'Lato';
+  color: #fff;
+}
+
+.cracker {
+  width: 30.625em;
+  height: 6.25em;
+  margin: 6.25em auto 0;
+  position: relative;
+  cursor: pointer;
+}
+.cracker:hover .cracker-left {
+  left: -7.5em;
+  top: 3.125em;
+  transform: rotate(-15deg);
+}
+.cracker:hover .cracker-right {
+  right: -7.5em;
+  top: 3.125em;
+  transform: rotate(15deg);
+}
+
+.cracker-left, .cracker-right {
+  transition: all 0.8s ease-in-out;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.cracker-left {
+  background-color: #DA1D1B;
+}
+
+.cracker-right {
+  background-color: #DA1D1B;
+}
+
+/* Custom color class  */
+.cracker-left-1, .cracker-right-1  {
+  background-color: yellow !important;
+}
+
+.cracker-left-inner-1:before, .cracker-right-inner-1:before {
+  background-color: yellowgreen !important;
+}
+
+.cracker-left__tail-1, .cracker-right__tail-1 {
+  background-color: yellow !important;
+}
+
+.cracker-left__end-1, .cracker-right__end-1 {
+  background-color: yellowgreen !important;
+}
+.cracker-left__end-1:before, .cracker-right__end-1:before {
+  background-color: #FFB20F;
+  border-color:#f5a600;
+}
+
+.cracker-right-zigzag-1 .cracker-right-zigzag__item-1 {
+  border-right-color:yellow !important;
+}
+
+.cracker-left {
+  left: 0;
+}
+
+.cracker-right {
+  right: 0;
+}
+
+.cracker-left-inner, .cracker-right-inner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.cracker-left-inner:before, .cracker-right-inner:before {
+  content: "";
+  height: 100%;
+  width: 0.625em;
+  background-color: #ad1715;
+  position: absolute;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.cracker-left-inner:before {
+  left: -0.3125em;
+  top: 0;
+}
+
+.cracker-right-inner:before {
+  right: -0.3125em;
+  top: 0;
+}
+
+.cracker-message {
+  padding: 0.9375em 0;
+  width: 35%;
+  margin: 0 auto;
+}
+.cracker-message .cracker-message__inner {
+  padding: 0.625em;
+  background: #ececec;
+  color: #6c6c6c;
+  text-align: center;
+  font-size: 0.9125em;
+  /* text-transform: uppercase; */
+  font-weight: bold;
+  font-family: "Shadows Into Light Two", cursive;
+  border: 1px solid #d7d7d7;
+  box-shadow: 2px 2px 30px #d2d2d2;
+}
+
+.cracker-left__tail,
+.cracker-left__end,
+.cracker-left__body,
+.cracker-right__tail,
+.cracker-right__end,
+.cracker-right__body,
+.cracker-left__mask-top,
+.cracker-left__mask-bottom,
+.cracker-right__mask-top,
+.cracker-right__mask-bottom {
+  position: absolute;
+}
+
+.cracker-left__tail {
+  left: 0;
+}
+
+.cracker-right__tail {
+  right: 0;
+}
+
+.cracker-left__tail, .cracker-right__tail {
+  width: 6.25em;
+  height: 100%;
+  background-color: #e74241;
+}
+
+.cracker-left__end, .cracker-right__end {
+  width: 1.25em;
+  height: 100%;
+  background-color: #ad1715;
+}
+.cracker-left__end:before, .cracker-right__end:before {
+  content: "";
+  height: 3.4375em;
+  width: 0.9375em;
+  background-color: #FFB20F;
+  position: absolute;
+  top: 1.3125em;
+  z-index: 15;
+  border: 0.0625em solid #f5a600;
+  border-radius: 0.3125em;
+}
+
+.cracker-left__end {
+  left: 6.25em;
+}
+.cracker-left__end:before {
+  left: -0.625em;
+}
+
+.cracker-right__end {
+  right: 6.25em;
+}
+.cracker-right__end:before {
+  right: -0.625em;
+}
+
+.cracker-left__mask-top,
+.cracker-left__mask-bottom,
+.cracker-right__mask-top,
+.cracker-right__mask-bottom {
+  z-index: 10;
+}
+
+.cracker-left__mask-top,
+.cracker-left__mask-bottom,
+.cracker-right__mask-top,
+.cracker-right__mask-bottom {
+  width: 8.75em;
+  height: 1.5625em;
+}
+
+.cracker-left__mask-top,
+.cracker-left__mask-bottom {
+  left: 1.875em;
+}
+
+.cracker-right__mask-top,
+.cracker-right__mask-bottom {
+  right: 1.875em;
+}
+
+.cracker-right__mask-bottom, .cracker-left__mask-top {
+  height: 0;
+  width: 0;
+  border-left: 4.375em solid transparent;
+  border-right: 2.375em solid transparent;
+  border-top: 4.375em solid #34A65F;
+}
+
+.cracker-right__mask-top, .cracker-left__mask-bottom {
+  height: 0;
+  width: 0;
+  border-left: 4.375em solid transparent;
+  border-right: 2.375em solid transparent;
+  border-bottom: 4.375em solid #34A65F;
+}
+
+.cracker-left__mask-top,
+.cracker-right__mask-top {
+  top: -2.1875em;
+}
+
+.cracker-right__mask-top {
+  transform: rotate(-180deg);
+}
+
+.cracker-right__mask-bottom {
+  transform: rotate(-180deg);
+}
+
+.cracker-left__mask-bottom,
+.cracker-right__mask-bottom {
+  bottom: -2.1875em;
+}
+
+.cracker-left-zigzag {
+  position: absolute;
+  right: -1px;
+  top: 0;
+  height: 100%;
+}
+.cracker-left-zigzag .cracker-left-zigzag__item {
+  height: 0;
+  width: 0;
+  border-bottom: 0.625em solid transparent;
+  border-right: 0.625em solid #34A65F;
+  border-top: 0.625em solid transparent;
+}
+
+.cracker-right-zigzag {
+  position: absolute;
+  left: -0.625em;
+  top: 0;
+  height: 100%;
+}
+.cracker-right-zigzag .cracker-right-zigzag__item {
+  height: 0;
+  width: 0;
+  border-bottom: 0.625em solid transparent;
+  border-right: 0.625em solid #DA1D1B;
+  border-top: 0.625em solid transparent;
+}
+
+.hover-me-text {
+  text-align: center;
+  margin-top: 3.125em;
+  font-family: "Shadows Into Light Two", cursive;
+  text-transform: uppercase;
+  /*   text-decoration: underline; */
+}
+
+.sky {
+  z-index: -1;
+  position: absolute;
+  background-color: #34A65F;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+/* Custom color class  */
+.cracker-left-2, .cracker-right-2  {
+  background-color: #FF731D !important;
+}
+
+.cracker-left-inner-2:before, .cracker-right-inner-2:before {
+  background-color: #1746A2 !important;
+}
+
+.cracker-left__tail-2, .cracker-right__tail-2 {
+  background-color: #FF731D !important;
+}
+
+.cracker-left__end-2, .cracker-right__end-2 {
+  background-color: #FFF7E9 !important;
+}
+.cracker-left__end-2:before, .cracker-right__end-2:before {
+  background-color: #5F9DF7;
+  border-color:#5F9DF7;
+}
+
+.cracker-right-zigzag-2 .cracker-right-zigzag__item-2 {
+  border-right-color:#FF731D !important;
+}
