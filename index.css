@@ -24,6 +24,17 @@ body, html {
   transform: rotate(15deg);
 }
 
+.cracker:active .cracker-left {
+  left: -7.5em;
+  top: 3.125em;
+  transform: rotate(-15deg);
+}
+.cracker:active .cracker-right {
+  right: -7.5em;
+  top: 3.125em;
+  transform: rotate(15deg);
+}
+
 .cracker-left, .cracker-right {
   transition: all 0.8s ease-in-out;
   width: 50%;
@@ -275,8 +286,8 @@ body, html {
   background-color: #34A65F;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   display: block;
 }
 
