@@ -4,6 +4,8 @@
 body, html {
   font-family: 'Lato';
   color: #fff;
+  width: 100vw;
+  height: 100vh;
 }
 
 .cracker {
