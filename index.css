@@ -10,31 +10,31 @@ body, html {
 
 .cracker {
   width: calc(400px);
-  height: calc(13 * 6.25px);
-  margin: 6.25em auto 0;
+  height: calc(11.4 * 6.25px);
+  margin: calc(11.4 * 6.25px) auto 0;
   position: relative;
   cursor: pointer;
 }
 
 .cracker:hover .cracker-left {
-  left: calc(-13 * 7.5px);
-  top: calc(13 * 3.125px);
+  left: calc(-11.4 * 7.5px);
+  top: calc(11.4 * 3.125px);
   transform: rotate(-15deg);
 }
 .cracker:hover .cracker-right {
-  right: calc(-13 * 7.5px);
-  top: calc(13 * 3.125px);
+  right: calc(-11.4 * 7.5px);
+  top: calc(11.4 * 3.125px);
   transform: rotate(15deg);
 }
 
 .cracker-left-tap {  
-  left: calc(-13 * 7.5px) !important;
-  top: calc(13 * 3.125px) !important;
+  left: calc(-11.4 * 7.5px) !important;
+  top: calc(11.4 * 3.125px) !important;
   transform: rotate(-15deg) !important;
 }
 .cracker-right-tap {
-  right: calc(-13 * 7.5px) !important;
-  top: calc(13 * 3.125px) !important;
+  right: calc(-11.4 * 7.5px) !important;
+  top: calc(11.4 * 3.125px) !important;
   transform: rotate(15deg) !important;
 }
 
@@ -95,7 +95,7 @@ body, html {
 .cracker-left-inner:before, .cracker-right-inner:before {
   content: "";
   height: 100%;
-  width: calc(13 * 0.625px);
+  width: calc(11.4 * 0.625px);
   background-color: #ad1715;
   position: absolute;
   z-index: 10;
@@ -103,26 +103,26 @@ body, html {
 }
 
 .cracker-left-inner:before {
-  left: calc(-13 * 0.3125px);
+  left: calc(-11.4 * 0.3125px);
   top: 0;
 }
 
 .cracker-right-inner:before {
-  right: calc(-13 * 0.3125px);
+  right: calc(-11.4 * 0.3125px);
   top: 0;
 }
 
 .cracker-message {
-  padding: calc(13 * 0.9375px) 0;
+  padding: calc(11.4 * 0.9375px) 0;
   width: 35%;
   margin: 0 auto;
 }
 .cracker-message .cracker-message__inner {
-  padding: calc(13 * 0.625px);
+  padding: calc(11.4 * 0.625px);
   background: #ececec;
   color: #6c6c6c;
   text-align: center;
-  font-size: calc(13 * 0.9125px);
+  font-size: calc(11.4 * 0.9125px);
   /* text-transform: uppercase; */
   font-weight: bold;
   font-family: "Shadows Into Light Two", cursive;
@@ -152,40 +152,40 @@ body, html {
 }
 
 .cracker-left__tail, .cracker-right__tail {
-  width: calc(13 * 6.25px);
+  width: calc(11.4 * 6.25px);
   height: 100%;
   background-color: #e74241;
 }
 
 .cracker-left__end, .cracker-right__end {
-  width: calc(13 * 1.25px);
+  width: calc(11.4 * 1.25px);
   height: 100%;
   background-color: #ad1715;
 }
 .cracker-left__end:before, .cracker-right__end:before {
   content: "";
-  height: calc(13 * 3.4375px);
-  width: calc(13 * 0.9375px);
+  height: calc(11.4 * 3.4375px);
+  width: calc(11.4 * 0.9375px);
   background-color: #FFB20F;
   position: absolute;
-  top: calc(13 * 1.3125px);
+  top: calc(11.4 * 1.3125px);
   z-index: 15;
-  border: calc(13 * 0.0625px) solid #f5a600;
-  border-radius: calc(13 * 0.3125px);
+  border: calc(11.4 * 0.0625px) solid #f5a600;
+  border-radius: calc(11.4 * 0.3125px);
 }
 
 .cracker-left__end {
-  left: calc(13 * 6.25px);
+  left: calc(11.4 * 6.25px);
 }
 .cracker-left__end:before {
-  left: calc(-13 * 0.625px);
+  left: calc(-11.4 * 0.625px);
 }
 
 .cracker-right__end {
-  right: calc(13 * 6.25px);
+  right: calc(11.4 * 6.25px);
 }
 .cracker-right__end:before {
-  right: calc(-13 * 0.625px);
+  right: calc(-11.4 * 0.625px);
 }
 
 .cracker-left__mask-top,
@@ -199,39 +199,39 @@ body, html {
 .cracker-left__mask-bottom,
 .cracker-right__mask-top,
 .cracker-right__mask-bottom {
-  width: calc(13 * 8.75px);
-  height: calc(13 * 1.5625px);
+  width: calc(11.4 * 8.75px);
+  height: calc(11.4 * 1.5625px);
 }
 
 .cracker-left__mask-top,
 .cracker-left__mask-bottom {
-  left: calc(13 * 1.875px);
+  left: calc(11.4 * 1.875px);
 }
 
 .cracker-right__mask-top,
 .cracker-right__mask-bottom {
-  right: calc(13 * 1.875px);
+  right: calc(11.4 * 1.875px);
 }
 
 .cracker-right__mask-bottom, .cracker-left__mask-top {
   height: 0;
   width: 0;
-  border-left: calc(13 * 4.375px) solid transparent;
-  border-right: calc(13 * 2.375px) solid transparent;
-  border-top: calc(13 * 4.375px) solid #34A65F;
+  border-left: calc(11.4 * 4.375px) solid transparent;
+  border-right: calc(11.4 * 2.375px) solid transparent;
+  border-top: calc(11.4 * 4.375px) solid #34A65F;
 }
 
 .cracker-right__mask-top, .cracker-left__mask-bottom {
   height: 0;
   width: 0;
-  border-left: calc(13 * 4.375px) solid transparent;
-  border-right: calc(13 * 2.375px) solid transparent;
-  border-bottom: calc(13 * 4.375px) solid #34A65F;
+  border-left: calc(11.4 * 4.375px) solid transparent;
+  border-right: calc(11.4 * 2.375px) solid transparent;
+  border-bottom: calc(11.4 * 4.375px) solid #34A65F;
 }
 
 .cracker-left__mask-top,
 .cracker-right__mask-top {
-  top: calc(-13 * 2.1875px);
+  top: calc(-11.4 * 2.1875px);
 }
 
 .cracker-right__mask-top {
@@ -244,7 +244,7 @@ body, html {
 
 .cracker-left__mask-bottom,
 .cracker-right__mask-bottom {
-  bottom: calc(-13 * 2.1875px);
+  bottom: calc(-11.4 * 2.1875px);
 }
 
 .cracker-left-zigzag {
@@ -256,23 +256,23 @@ body, html {
 .cracker-left-zigzag .cracker-left-zigzag__item {
   height: 0;
   width: 0;
-  border-bottom: calc(13 * 0.625px) solid transparent;
-  border-right: calc(13 * 0.625px) solid #34A65F;
-  border-top: calc(13 * 0.625px) solid transparent;
+  border-bottom: calc(11.4 * 0.625px) solid transparent;
+  border-right: calc(11.4 * 0.625px) solid #34A65F;
+  border-top: calc(11.4 * 0.625px) solid transparent;
 }
 
 .cracker-right-zigzag {
   position: absolute;
-  left: calc(-13 * 0.625px);
+  left: calc(-11.4 * 0.625px);
   top: 0;
   height: 100%;
 }
 .cracker-right-zigzag .cracker-right-zigzag__item {
   height: 0;
   width: 0;
-  border-bottom: calc(13 * 0.625px) solid transparent;
-  border-right: calc(13 * 0.625px) solid #DA1D1B;
-  border-top: calc(13 * 0.625px) solid transparent;
+  border-bottom: calc(11.4 * 0.625px) solid transparent;
+  border-right: calc(11.4 * 0.625px) solid #DA1D1B;
+  border-top: calc(11.4 * 0.625px) solid transparent;
 }
 
 .sky {
