@@ -1,273 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Merry XMas</title>
-  <link rel="stylesheet" href="index.css">
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
-  <link rel="icon" href="/favicon.ico"/>  
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/logo192.png"/>
-  <!-- <link rel="manifest" href="/manifest.json"/> -->
-</head>
-<body> 
-  <div class="sky">
-  </div>  
-  <p style="text-align: center; font-size: large;">    
-    Dương chạm vào từng viên kẹo để mở nhaaaa
-  </p>
-  <div class='cracker' id='cracker'>
-    <div class='cracker-message'>
-      <div class='cracker-message__inner'>
-        Giáng sinh sắp dến rùi
-      </div>
-    </div>
-    <div class='cracker-left'>
-      <div class='cracker-left-inner'>
-        <div class='cracker-left__mask-top'></div>
-        <div class='cracker-left__mask-bottom'></div>
-        <div class='cracker-left__tail'></div>
-        <div class='cracker-left__end'></div>
-        <div class='cracker-left__body'></div>
-        <div class='cracker-left-zigzag'>
-          <div class='cracker-left-zigzag__item'></div>
-          <div class='cracker-left-zigzag__item'></div>
-          <div class='cracker-left-zigzag__item'></div>
-          <div class='cracker-left-zigzag__item'></div>
-          <div class='cracker-left-zigzag__item'></div>
+<html class="gr__localhost"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Cmsn nyyyyyy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+<link rel="stylesheet" href="Happy%20Birthday_files/bootstrap.css"><link rel="stylesheet" href="Happy%20Birthday_files/style.css"></head>
+
+<body data-gr-c-s-loaded="true">
+    <div>
+        <div class="container">
+            <div>
+                <div class="row">
+                    <div class="loader" style="display: none;">
+                        <button id="play">Start</button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-    <div class='cracker-right'>
-      <div class='cracker-right-inner'>
-        <div class='cracker-right__mask-top'></div>
-        <div class='cracker-right__mask-bottom'></div>
-        <div class='cracker-right__tail'></div>
-        <div class='cracker-right__end'></div>
-        <div class='cracker-right__body'></div>
-        <div class='cracker-right-zigzag'>
-          <div class='cracker-right-zigzag__item'></div>
-          <div class='cracker-right-zigzag__item'></div>
-          <div class='cracker-right-zigzag__item'></div>
-          <div class='cracker-right-zigzag__item'></div>
-          <div class='cracker-right-zigzag__item'></div>
+    <audio class="song" controls="controls" loop="">
+        <source src="Happy%20Birthday_files/music.mp3">
+        
+        Your browser isn't invited for super fun audio time.
+    </audio>
+
+    <canvas id="confetti" width="438" height="726"></canvas>
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-12 col-xl-6 mx-auto">
+                <img src="Happy%20Birthday_files/banner.png" alt="">
+            </div>
+            <div class="col-12  text-center">
+                <div id="name" class="area">Chúc mừng sinh nhật Dươngggg</div>
+            </div>
+
+            <div class="col-12 text-center">
+                <div class="type-wrap">
+                    <div id="typed-strings" class="typing" style="display: none;">
+                        <!-- <h2>Chúc mừng sinh nhật <i id="nae">công chúa Dương xinh đẹppppp</i></h2> -->
+                        <h2>^1500Chúc em tủi mới lun xinh đẹppppppp^700</h2>
+                        <h2>Lun học giỏi^700</h2>
+                        <h2>Có thật nhìu sức khỏe, may mắn^700</h2>
+                        <h2>Chúc ny lun có nhiều niềm vui trong cuộc sống^700</h2>
+                        <h2>Và đặc biệt là ^3000 lun iu anh nhìu nhaaaaaaaaaaa^700</h2>
+                        <h2>Anh iu công chúa nhìu^700uuuuuuuuuuu ♥♥♥♥♥^700💝💝💝💝💝💝^100000000000000000</h2>
+                        <!-- <h2>Lun học giỏi</h2> -->
+                    </div>
+                    <span id="typed"></span>
+                </div>
+            </div>
+
+            <div class="col-12 col-xl-6 mx-auto">
+                <img src="Happy%20Birthday_files/cake.svg" alt="">
+            </div>
         </div>
-      </div>
+
     </div>
-  </div>
+    <img src="Happy%20Birthday_files/Balloon-Border.png" class="balloon-border" style="top: -500px;" width="100%">
 
-  <div class='cracker' id='cracker1'>
-    <div class='cracker-message'>
-      <div class='cracker-message__inner'>
-        Hong bít Dương có mún
-      </div>
-    </div>
-    <div class='cracker-left cracker-left-1'>
-      <div class='cracker-left-inner cracker-left-inner-1'>
-        <div class='cracker-left__mask-top'></div>
-        <div class='cracker-left__mask-bottom'></div>
-        <div class='cracker-left__tail cracker-left__tail-1'></div>
-        <div class='cracker-left__end cracker-left__end-1'></div>
-        <div class='cracker-left__body'></div>
-        <div class='cracker-left-zigzag'>
-          <div class='cracker-left-zigzag__item cracker-right-zigzag__item-1'></div>
-          <div class='cracker-left-zigzag__item cracker-right-zigzag__item-1'></div>
-          <div class='cracker-left-zigzag__item cracker-right-zigzag__item-1'></div>
-          <div class='cracker-left-zigzag__item cracker-right-zigzag__item-1'></div>
-          <div class='cracker-left-zigzag__item cracker-right-zigzag__item-1'></div>
-        </div>
-      </div>
-    </div>
-    <div class='cracker-right cracker-right-1'>
-      <div class='cracker-right-inner cracker-right-inner-1'>
-        <div class='cracker-right__mask-top'></div>
-        <div class='cracker-right__mask-bottom'></div>
-        <div class='cracker-right__tail cracker-right__tail-1'></div>
-        <div class='cracker-right__end cracker-right__end-1'></div>
-        <div class='cracker-right__body'></div>
-        <div class='cracker-right-zigzag cracker-right-zigzag-1'>
-          <div class='cracker-right-zigzag__item cracker-right-zigzag__item-1'></div>
-          <div class='cracker-right-zigzag__item cracker-right-zigzag__item-1'></div>
-          <div class='cracker-right-zigzag__item cracker-right-zigzag__item-1'></div>
-          <div class='cracker-right-zigzag__item cracker-right-zigzag__item-1'></div>
-          <div class='cracker-right-zigzag__item cracker-right-zigzag__item-1'></div>
-        </div>
-      </div>
-    </div>
-  </div>  
 
-  <div class='cracker' id='cracker2'>
-    <div class='cracker-message'>
-      <div class='cracker-message__inner'>
-        Làm ngùi iu anh hongggg
-      </div>
-    </div>
-    <div class='cracker-left cracker-left-2'>
-      <div class='cracker-left-inner cracker-left-inner-2'>
-        <div class='cracker-left__mask-top'></div>
-        <div class='cracker-left__mask-bottom'></div>
-        <div class='cracker-left__tail cracker-left__tail-2'></div>
-        <div class='cracker-left__end cracker-left__end-2'></div>
-        <div class='cracker-left__body'></div>
-        <div class='cracker-left-zigzag'>
-          <div class='cracker-left-zigzag__item cracker-right-zigzag__item-2'></div>
-          <div class='cracker-left-zigzag__item cracker-right-zigzag__item-2'></div>
-          <div class='cracker-left-zigzag__item cracker-right-zigzag__item-2'></div>
-          <div class='cracker-left-zigzag__item cracker-right-zigzag__item-2'></div>
-          <div class='cracker-left-zigzag__item cracker-right-zigzag__item-2'></div>
-        </div>
-      </div>
-    </div>
-    <div class='cracker-right cracker-right-2'>
-      <div class='cracker-right-inner cracker-right-inner-2'>
-        <div class='cracker-right__mask-top'></div>
-        <div class='cracker-right__mask-bottom'></div>
-        <div class='cracker-right__tail cracker-right__tail-2'></div>
-        <div class='cracker-right__end cracker-right__end-2'></div>
-        <div class='cracker-right__body'></div>
-        <div class='cracker-right-zigzag cracker-right-zigzag-2'>
-          <div class='cracker-right-zigzag__item cracker-right-zigzag__item-2'></div>
-          <div class='cracker-right-zigzag__item cracker-right-zigzag__item-2'></div>
-          <div class='cracker-right-zigzag__item cracker-right-zigzag__item-2'></div>
-          <div class='cracker-right-zigzag__item cracker-right-zigzag__item-2'></div>
-          <div class='cracker-right-zigzag__item cracker-right-zigzag__item-2'></div>
-        </div>
-      </div>
-    </div>
-  </div>   
-<script>
-  // Snow from https://codepen.io/radum/pen/xICAB
-
-(function () {
-
-var COUNT = 300;
-var masthead = document.querySelector('.sky');
-var canvas = document.createElement('canvas');
-var ctx = canvas.getContext('2d');
-var width = masthead.clientWidth;
-var height = masthead.clientHeight;
-var i = 0;
-var active = false;
-
-function onResize() {
-  width = masthead.clientWidth;
-  height = masthead.clientHeight;
-  canvas.width = width;
-  canvas.height = height;
-  ctx.fillStyle = '#FFF';
-
-  var wasActive = active;
-  active = width > 600;
-
-  if (!wasActive && active)
-    requestAnimFrame(update);
-}
-
-var Snowflake = function () {
-  this.x = 0;
-  this.y = 0;
-  this.vy = 0;
-  this.vx = 0;
-  this.r = 0;
-
-  this.reset();
-}
-
-Snowflake.prototype.reset = function() {
-  this.x = Math.random() * width;
-  this.y = Math.random() * -height;
-  this.vy = 1 + Math.random() * 3;
-  this.vx = 0.5 - Math.random();
-  this.r = 1 + Math.random() * 2;
-  this.o = 0.5 + Math.random() * 0.5;
-}
-
-canvas.style.position = 'absolute';
-canvas.style.left = canvas.style.top = '0';
-
-var snowflakes = [], snowflake;
-for (i = 0; i < COUNT; i++) {
-  snowflake = new Snowflake();
-  snowflake.reset();
-  snowflakes.push(snowflake);
-}
-
-function update() {
-
-  ctx.clearRect(0, 0, width, height);
-
-  if (!active)
-    return;
-
-  for (i = 0; i < COUNT; i++) {
-    snowflake = snowflakes[i];
-    snowflake.y += snowflake.vy;
-    snowflake.x += snowflake.vx;
-
-    ctx.globalAlpha = snowflake.o;
-    ctx.beginPath();
-    ctx.arc(snowflake.x, snowflake.y, snowflake.r, 0, Math.PI * 2, false);
-    ctx.closePath();
-    ctx.fill();
-
-    if (snowflake.y > height) {
-      snowflake.reset();
-    }
-  }
-
-  requestAnimFrame(update);
-}
-
-// shim layer with setTimeout fallback
-window.requestAnimFrame = (function(){
-  return  window.requestAnimationFrame       ||
-          window.webkitRequestAnimationFrame ||
-          window.mozRequestAnimationFrame    ||
-          function( callback ){
-            window.setTimeout(callback, 1000 / 60);
-          };
-})();
-
-onResize();
-window.addEventListener('resize', onResize, false);
-
-masthead.appendChild(canvas);
-})();
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
 </script>
+<script src="Happy%20Birthday_files/snowflakes.js"></script>
+<script src="Happy%20Birthday_files/jquery.js"></script>
+<script src="Happy%20Birthday_files/typed.js"></script>
+<script src="Happy%20Birthday_files/script.js"></script><style type="text/css" data-typed-js-css="true">
+        .typed-cursor{
+          opacity: 1;
+        }
+        .typed-cursor.typed-cursor--blink{
+          animation: typedjsBlink 0.7s infinite;
+          -webkit-animation: typedjsBlink 0.7s infinite;
+                  animation: typedjsBlink 0.7s infinite;
+        }
+        @keyframes typedjsBlink{
+          50% { opacity: 0.0; }
+        }
+        @-webkit-keyframes typedjsBlink{
+          0% { opacity: 1; }
+          50% { opacity: 0.0; }
+          100% { opacity: 1; }
+        }
+      </style>
 <script>
-  $(function(){    
-    $( "div#cracker" ).bind( "tap", tapHandler );
-   
-    function tapHandler( event ){      
-      $( "div#cracker" ).children("div.cracker-left").toggleClass("cracker-left-tap")
-      $( "div#cracker" ).children("div.cracker-right").toggleClass("cracker-right-tap")
-    }
+var typed = new Typed('.typing', {
+    loop: false,
+    cursorChar: '💗',
+    startDelay: 1500,
+    showCursor: true,
+    fadeOut: true,
+    typeSpeed: 20,
+})
+</script>
 
-    $( "div#cracker1" ).bind( "tap", tapHandler1 );
-   
-    function tapHandler1( event ){      
-      $( "div#cracker1" ).children("div.cracker-left").toggleClass("cracker-left-tap")
-      $( "div#cracker1" ).children("div.cracker-right").toggleClass("cracker-right-tap")
-    }
-
-    $( "div#cracker2" ).bind( "tap", tapHandler2 );
-   
-    function tapHandler2( event ){      
-      $( "div#cracker2" ).children("div.cracker-left").toggleClass("cracker-left-tap")
-      $( "div#cracker2" ).children("div.cracker-right").toggleClass("cracker-right-tap")
-    }
-  });
-  // window.addEventListener("DOMContentLoaded", event => {
-  
-  // setTimeout(function() {
-  //   const audio = document.getElementById("audio");
-  //   audio.muted = false;
-  // },1000)  
-  // });
-
-  </script>
-</body>
-</html>
+</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
